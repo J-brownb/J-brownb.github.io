@@ -1,0 +1,123 @@
+/* centre all content  */
+
+#content {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: rgb(39, 60, 77);
+  background: linear-gradient(
+    90deg,
+    hwb(207 15% 70%) 19%,
+    rgba(65, 91, 112, 1) 78%
+  );
+}
+
+/* Centre the output div (flex) */
+.output {
+  justify-content: center;
+  display: flex;
+  color: #fff;
+}
+
+#input {
+  padding-bottom: 30px;
+}
+
+h1 {
+  font-family: 'Secular One', sans-serif;
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.whiteh1 {
+  color: #fff;
+}
+
+h2 {
+  font-family: 'Secular One', sans-serif;
+  font-size: 2em;
+}
+
+#searchbox,
+#refreshbutton {
+  font-family: 'Ubuntu', sans-serif;
+  height: 50px;
+  width: 35%;
+}
+
+@media only screen and (max-width: 600px) {
+  #refreshbutton,
+  #searchbox {
+    width: 95%;
+  }
+}
+
+#refreshbutton {
+  width: 200px;
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
+}
+
+#resultscontainer {
+  margin: auto;
+  width: 50%;
+}
+
+#tooshort p {
+  background-color: #f8d7da;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#justright p {
+  background-color: #d4edda;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#toolong p {
+  background-color: #f8d7da;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+progress[value] {
+  width: 250px;
+  height: 50px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: #212529;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 2px;
+  color: white;
+}
+
+.container {
+  padding: 30px;
+}
+
+.container p {
+  color: black;
+}
+
+/* RANDOM TEAM GENERATOR STYLING */
+
+#nameinput {
+  width: 50%;
+  height: 200px;
+}
+
+.whitetext {
+  color: white;
+}
