@@ -504,8 +504,16 @@ button p {
   }
 }
 
+/* hide slant on mob */
 @media only screen and (max-width: 600px) {
   .hideMob {
     visibility: hidden;
+  }
+}
+
+/* bigger banner on mob */
+@media only screen and (max-width: 600px) {
+  #banner {
+    height: 90vh;
   }
 }
