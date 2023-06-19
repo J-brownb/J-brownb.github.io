@@ -28,6 +28,7 @@ body {
 
 #banner h1 {
   color: white;
+  padding-top: 25px;
   text-align: center;
   background: linear-gradient(
     to right,
@@ -500,3 +501,9 @@ button p {
 
 }
 
+/* Project images */
+@media only screen and (max-width: 600px) {
+  .mobImg {
+    width:100%;
+  }
+}
