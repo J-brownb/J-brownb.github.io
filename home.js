@@ -3,7 +3,7 @@
 //gsap changing text
 gsap.registerPlugin(TextPlugin);
 
-let text = ["Collaborative ", "Inventive ", "Imaginative ", "Resourceful "];
+let text = ["CSS ", "JavaScript ", "PHP ", "HTML "];
 let currentIndex = 0;
 
 function changeText() {
