@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script src="https://kit.fontawesome.com/cee8d42c1a.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/node_modules/@splidejs/splide/dist/css/splide.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
+  <title>Jonny Hodgson - Portfolio Site</title>
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <div id=header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <a href="/"> <img src="/Logo.png" width="155" height="50"></a>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Dropdown"
+          aria-controls="Dropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Dropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#hello">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#featured_project">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#outro">Contact</a>
+            </li>
+          </ul>
+        <ul class="sm-icons mobile-social">
+          <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.linkedin.com/in/jonny-hodgson/"><i
+                class="fa-brands fa-linkedin-in"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="mailto:jonjames.hodgson@gmail.com"><i
+                class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+        </div>
+      </div>
+      <!-- SOCIAL MEDIA LINKS -->
+      <div class="socials">
+        <ul class="sm-icons">
+          <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.linkedin.com/in/jonny-hodgson/"><i
+                class="fa-brands fa-linkedin-in"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="mailto:jonjames.hodgson@gmail.com"><i
+                class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <!--BANNER -->
+      <div id="wellness-banner">
+        <div id="bannertext">
+          <h1>The Wellness Site<span>A database driven yoga site with a focus on community participation.</span> </h1>
+          <br>
+          <a href="#hello">
+            <p class="text-center"><i class="fa-solid fa-chevron-down fa-beat fa-xl" style="color: #ffffff;"></i></p>
+          </a>
+        </div>
+      </div>
+  </div>
+  <!-- INTRO -->
+  <section id="hello">
+    <div class="container pt-5 pb-5 section">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="underlined-header pt-5">Dynamic Yoga Site</h2>
+          <p>The Wellness Site was created as part of my 2nd year university project.</p>
+          <p> The site allows users to sign up for their own accounts, create custom routines, add custom poses, leave
+            reviews for poses, favourite poses and explore poses from different categories of yoga. </p>
+          <p>The site utilises HTML, CSS, JavaScript, PHP, Smarty, MySQL and phpMyAdmin.</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="/images/Yoga Site.png" alt="the wellness site homepage" class="responsive">
+        </div>
+      </div>
+    </div>
+    <div class="container pt-5 pb-5 section">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="/images/yoga-login.png" alt="TWS registration form" class="responsive">
+        </div>
+        <div class="col-sm-6">
+          <h2 class="underlined-header">Login & Registration System</h2>
+          <p>Users can register for an account to access all site features including adding poses, adding routines and
+            gaining points in community leaderboards.</p>
+          <p>Passwords stored in the database are hashed and salted for a higher level of security.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container pt-5 section">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="underlined-header">Community Leaderboards</h2>
+          <p>The leaderboards feature adds an engaging community element to the website. When uploading a pose, leaving
+            a review, adding a pose to their favourites or adding a routine, the user is given a 'yoga point'.</p>
+          <p>These points build up over time and the top contributors to the site are recognised on the leaderboards
+            page.</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="/images/leaderboards.png" alt="TWS leaderboards" class="responsive">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- VISIT SITE -->
+  <div class="container text-center section pb-5">
+    <a href="https://jonnyh.uosweb.co.uk/awad-assignment/"><button class="alternatebutton">Visit Website</button></a>
+  </div>
+  <!-- OTHER PROJECTS -->
+  <section id="featured_project" class="section">
+    <section id="project-carousel" class="splide" aria-label="">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide slide-2">
+            <div class="slanted-project">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+              </svg>
+            </div>
+            <div class="slanted-project-bottom">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+              </svg>
+            </div>
+            <h2 class="text-center pt-5 whiteh1">What I've Been Working On</h2>
+            <div class="container">
+              <div class="project_inner row p-5 pe-lg-0 align-items-center rounded-3 b shadow-lg">
+                <div class="col-lg-6 p-lg-5">
+                  <h2 class="underlined-header">Fictional Library Co</h2>
+                  <p>University project developed with PHP and MySQL.</p>
+                  <ul class="project-list">
+                    <li>Login system</li>
+                    <li>Employee and customer access levels</li>
+                    <li>Lending, returns and fine system</li>
+                    <li>Reviews feature</li>
+                  </ul>
+                  <div><br>
+                    <a href="/the-fictional-library.html"><button class="alternatebutton">View Project</button></a>
+                  </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                                    <img class="rounded" src="/images/FLC logo.png">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="splide__slide slide-3">
+            <div class="slanted-project">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+              </svg>
+            </div>
+            <div class="slanted-project-bottom">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+              </svg>
+            </div>
+            <h2 class="text-center pt-5">What I've Been Working On</h2>
+            <div class="container">
+              <div class="project_inner row p-5 pe-lg-0 align-items-center rounded-3 b shadow-lg">
+                <div class="col-lg-6 p-lg-5">
+                  <h2 class="underlined-header">SERP Preview Tool</h2>
+                  <p>A tool developed with JavaScript to check title tag lengths and preview SERP results.</p>
+                  <ul class="project-list">
+                    <li>Check Title Tag length</li>
+                    <li>Add custom URL </li>
+                    <li>Add custom business name</li>
+                    <li>Preview SERP</li>
+                  </ul>
+                  <div><br>
+                    <a href="/titletagchecker.html"><button class="alternatebutton">View
+                        Project</button></a>
+                  </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <img class="rounded" src="/images/search-results.png">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="splide__slide slide-3">
+            <div class="slanted-project">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+              </svg>
+            </div>
+            <div class="slanted-project-bottom">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+              </svg>
+            </div>
+            <h2 class="text-center pt-5">What I've Been Working On</h2>
+            <div class="container">
+              <div class="project_inner row p-5 pe-lg-0 align-items-center rounded-3 b shadow-lg">
+                <div class="col-lg-6 p-lg-5">
+                  <h2 class="underlined-header">Password Generator</h2>
+                  <p>A tool developed with JavaScript using the Password Generator API by API Ninjas.</p>
+                  <ul class="project-list">
+                    <li>Choose password length</li>
+                    <li>Exclude numbers and special characters</li>
+                    <li>Copy to clipboard</li>
+                  </ul>
+                  <div><br>
+                    <a href="/password-generator.html"><button class="alternatebutton">View
+                        Project</button></a>
+                  </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <img class="rounded" src="/images/password.png">
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+      </div>
+      <div class="splide__progress">
+        <div class="splide__progress__bar">
+        </div>
+    </section>
+  </section>
+  <!-- TECH ICONS -->
+  <section id="tech" class="section">
+    <div class="icons">
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-css3"></i>
+      <i class="fa-brands fa-js"></i>
+      <i class="fa-brands fa-bootstrap"></i>
+      <i class="fa-brands fa-php"></i>
+    </div>
+  </section>
+  <!-- CLOSING BANNER -->
+  <section id="outro" class="section">
+    <h1 class="whiteh1">Contact Me</h1>
+    <p class="whitetext">I would love to hear from you! Whether you're interested in working together on a project or
+      just want to say hi <br> feel free to send me a message by clicking the button below.</p>
+    <a href="mailto:jonjames.hodgson@gmail.com"> <button id="contact">Contact</button></a>
+  </section>
+  </main>
+  <!-- FOOTER -->
+  <footer id="footer">
+    <p>made with &#10084;&#65039; (and ☕)</p>
+  </footer>
+  <!-- BACK TO TOP -->
+  <div id="top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- JS FILE -->
+  <script src="/home.js"></script>
+  <!-- SPLIDE SLIDER -->
+  <script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+  <script>
+    new Splide('#project-carousel',
+      {
+        type: 'loop',
+        rewind: 'true',
+
+      }
+    ).mount();
+  </script>
+</body>
+
+</html>
