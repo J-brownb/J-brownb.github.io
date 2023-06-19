@@ -516,4 +516,7 @@ button p {
   #banner {
     height: 90vh;
   }
+  #banner h1 {
+    padding-top: 35px
+  }
 }
