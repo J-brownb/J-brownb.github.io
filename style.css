@@ -17,7 +17,7 @@ body {
   width: 100%;
   background: linear-gradient(
     to right,
-    #731dd8 var(--target),
+    #000 var(--target),
     #ffffff var(--target)
   );
   position: relative;
@@ -134,7 +134,7 @@ p {
 #outro {
   text-align: center;
   padding: 150px 50px;
-  background-color: #731dd8;
+  background-color: #000;
   position: relative;
 }
 
@@ -234,7 +234,7 @@ footer p {
 
 .alternatebutton:hover {
   transition-duration: 0.3s;
-  background-color: #731dd8;
+  background-color: #000;
   color: white;
   border: 1px solid rgb(255, 255, 255);
 }
@@ -473,7 +473,7 @@ button p {
   z-index: 99;
   padding: 5px 12px 5px 12px;
   border-radius: 10px;
-  background-color: #731dd8;
+  background-color: #000;
   position: fixed;
   cursor: pointer;
   bottom: 25px;
