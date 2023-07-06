@@ -173,7 +173,7 @@ progress[value] {
 /* footer  */
 footer {
   bottom: 0px;
-  background-color: #212529;
+  background-color: #F8F9FA;
   width: 100%;
   height: 50px;
   text-align: center;
@@ -182,7 +182,7 @@ footer {
 footer p {
   font-family: "Ubuntu", sans-serif;
   font-size: 1em;
-  color: white;
+  color: #000;
 }
 
 .container {
