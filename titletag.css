@@ -262,7 +262,7 @@ a:hover {
 #outro {
   text-align: center;
   padding: 150px 50px;
-  background-color: #731dd8;
+  background-color: #000;
   position: relative;
 }
 
@@ -298,7 +298,8 @@ button p {
   z-index: 99;
   padding: 5px 12px 5px 12px;
   border-radius: 10px;
-  background-color: #731dd8;
+  border: 1px solid #fff;
+  background-color: #000;
   position: fixed;
   cursor: pointer;
   bottom: 25px;

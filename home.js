@@ -32,13 +32,14 @@ gsap.to("#banner, #wellness-banner, #library-banner", {
   ease: "none",
   scrollTrigger: {
     trigger: "#container",
-
     start: "top top",
-    end: "+=400",
+    end: "+=900",
     pin: true,
-    scrub: 1,
+    toggleActions: "play reverse none reverse", // play forward when scrolling down, reverse when scrolling up
+    markers: {startColor: "green", endColor: "red", fontSize: "12px"}
   },
 });
+
 
 //to top button
 const toTop = document.getElementById("top");
@@ -79,20 +80,9 @@ const hover = function (e) {
 nav.addEventListener("mouseover", hover.bind(0.3));
 nav.addEventListener("mouseout", hover.bind(1));
 
+
 //sticky header
-const header = document.getElementById("header");
-const stickyNav = function (entries) {
-  const [entry] = entries;
-  if (!entry.isIntersecting) {
-    nav.classList.add("sticky");
-  } else nav.classList.remove("sticky");
-};
-const headerObserver = new IntersectionObserver(stickyNav, {
-  root: null, //entire viewport
-  threshold: 0,
-  rootMargin: `-${navHeight}px`,
-});
-headerObserver.observe(header);
+nav.classList.add("sticky");
 
 //Fade in sections
 const allSections = document.querySelectorAll(".section");

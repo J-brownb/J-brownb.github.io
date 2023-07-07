@@ -7,7 +7,7 @@ body {
 #bannertext {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -21,7 +21,7 @@ body {
     #ffffff var(--target)
   );
   position: relative;
-  height: 80vh;
+  height: 90vh;
   justify-content: center;
   align-items: center;
 }
@@ -58,7 +58,7 @@ body {
     #ffffff var(--target)
   );
   position: relative;
-  height: 80vh;
+  height: 90vh;
   justify-content: center;
   align-items: center;
 }
@@ -94,7 +94,7 @@ body {
     #ffffff var(--target)
   );
   position: relative;
-  height: 80vh;
+  height: 90vh;
   justify-content: center;
   align-items: center;
 }
@@ -322,7 +322,7 @@ button p {
   position: fixed;
   background-color: #fff;
   opacity: 0.9;
-  z-index: 99;
+  z-index: 10;
   width: 100%;
 }
 
@@ -475,6 +475,7 @@ button p {
   border-radius: 10px;
   background-color: #000;
   position: fixed;
+  border: 1px solid #fff;
   cursor: pointer;
   bottom: 25px;
   right: 25px;
