@@ -36,7 +36,6 @@ gsap.to("#banner, #wellness-banner, #library-banner", {
     end: "+=900",
     pin: true,
     toggleActions: "play reverse none reverse", // play forward when scrolling down, reverse when scrolling up
-    markers: {startColor: "green", endColor: "red", fontSize: "12px"}
   },
 });
 
