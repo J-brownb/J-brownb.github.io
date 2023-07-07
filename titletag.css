@@ -196,19 +196,26 @@ footer p {
 /* nav */
 .navbar-expand-lg .navbar-nav {
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 700;
   padding: 10px 0px 10px;
   color: #000;
 }
 
-.navbar a {
-  color: #000;
-}
-
-a:hover {
+.nav-link.active,
+.nav-link {
   color: #000 !important;
 }
 
+/* sticky nav */
+.sticky {
+  position: fixed;
+  background-color: #fff;
+  opacity: 0.9;
+  z-index: 10;
+  width: 100%;
+}
+
+/* social icons */
 .socials ul {
   display: flex;
   list-style-type: none;
@@ -218,28 +225,31 @@ a:hover {
 }
 
 .socials a {
-  color: #000;
+  color: rgba(0, 0, 0, 0.55);
 }
 
+.socials:hover {
+  color: #000 !important;
+  transition-duration: 0.3s;
+}
 
 .mobile-social {
   list-style-type: none;
-  display:flex;
+  display: flex;
   padding-left: 0;
-  }
-  
-  @media only screen and (min-width: 991px) {
-    .mobile-social {
-      display: none;
-    }
-  }
+}
 
-  @media only screen and (max-width: 991px) {
-    .socials {
-      display: none;
-    }
+@media only screen and (min-width: 991px) {
+  .mobile-social {
+    display: none;
   }
+}
 
+@media only screen and (max-width: 991px) {
+  .socials {
+    display: none;
+  }
+}
 /* RANDOM TEAM GENERATOR STYLING */
 #nameinput {
   width: 50%;
@@ -250,14 +260,16 @@ a:hover {
   color: white;
 }
 
+
 /* sticky nav */
 .sticky {
   position: fixed;
   background-color: #fff;
   opacity: 0.9;
-  z-index: 99;
+  z-index: 10;
   width: 100%;
 }
+
 
 #outro {
   text-align: center;
@@ -311,4 +323,18 @@ button p {
 #top a {
   color: white;
   text-decoration: none;
+}
+
+
+.small-banner {
+  color: #E6B101;
+  background-color: #000;
+}
+
+.small-banner h1 {
+  color: #E6B101;
+}
+
+.small-banner a {
+  color: #E6B101;
 }
