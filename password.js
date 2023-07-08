@@ -42,7 +42,7 @@ function generatePassword(length) {
   )
     .then((response) => response.json())
     .then((data) => {
-      password.innerHTML = data.random_password;
+      password.value = data.random_password;
     })
     .catch((error) => console.error(error));
 }
@@ -103,10 +103,26 @@ function scrollFunction() {
 
 // Copy password to clipboard
 copyButton.addEventListener("click", function () {
-  const passwordText = password.textContent; // Get the password text
-  navigator.clipboard.writeText(passwordText) // Copy the password text to clipboard
-    .then(() => {
-      alert("Password copied to clipboard!");
-    })
+  const passwordText = password.value;
 
-  });
+  // Try using the modern clipboard API
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(passwordText)
+      .then(() => {
+        alert("Password copied to clipboard!");
+      })
+      .catch((error) => {
+        console.error("Failed to copy password:", error);
+      });
+  }
+  // Fallback for browsers that don't support the clipboard API
+  else {
+    const textarea = document.createElement("textarea");
+    textarea.value = passwordText;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("Password copied to clipboard!");
+  }
+});
