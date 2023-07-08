@@ -572,3 +572,8 @@ button p {
         color: #000;
 
   }
+
+  .project-tech {
+    opacity: 0.5;
+    font-size: 35px;
+  }
