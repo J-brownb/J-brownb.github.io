@@ -155,6 +155,32 @@ footer p {
   opacity: 0.5;
 }
 
+/* icon hover styling */
+
+.fa-html5:hover {
+  color: #E34C26;
+}
+
+.fa-css3:hover {
+  color:#254DE3
+}
+
+.fa-js:hover {
+  color:#F0DC4E
+}
+
+.fa-bootstrap:hover {
+  color: #7952B3
+}
+
+.fa-php:hover {
+  color: #787CB4
+}
+
+.icon-mysql:hover {
+  color:#00546B
+}
+
 /* about section */
 #about {
   padding-top: 75px;
@@ -515,5 +541,8 @@ button p {
     opacity: 0.5;
     font-size: 35px;
   }
+
+
+
 
 
