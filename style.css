@@ -491,7 +491,7 @@ button p {
 /* bigger banner on mob */
 @media only screen and (max-width: 600px) {
   #banner {
-    height: 90vh;
+    height: 100vh;
   }
   #banner h1 {
     padding-top: 35px;
