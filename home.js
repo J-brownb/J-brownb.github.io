@@ -39,7 +39,6 @@ gsap.to("#banner, #wellness-banner, #library-banner", {
   },
 });
 
-
 //to top button
 const toTop = document.getElementById("top");
 toTop.addEventListener("click", function () {
@@ -78,6 +77,8 @@ const hover = function (e) {
 };
 nav.addEventListener("mouseover", hover.bind(0.3));
 nav.addEventListener("mouseout", hover.bind(1));
+
+
 
 
 //sticky header
