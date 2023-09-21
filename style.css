@@ -55,7 +55,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.125;
+  opacity: 0.1;
   background-image: linear-gradient(#e6b101 1px, transparent 1px),
     linear-gradient(to right, #e6b101 1px, #e5e5f7 1px);
   background-size: 20px 20px;
