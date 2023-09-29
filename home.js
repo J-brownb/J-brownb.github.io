@@ -63,7 +63,6 @@ function scrollFunction() {
 const nav = document.querySelector(".navbar");
 let navHeight = nav.getBoundingClientRect().height;
 // navHeight = navHeight + 100
-console.log(navHeight);
 
 //Menu fade effect function
 const hover = function (e) {
