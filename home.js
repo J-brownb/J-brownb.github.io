@@ -1,26 +1,30 @@
 "use strict";
 
 //gsap changing text
-gsap.registerPlugin(TextPlugin);
+// gsap.registerPlugin(TextPlugin);
 
-let text = ["Collaborative ", "Enthusiastic ", "Imaginative ", "Resourceful "];
-let currentIndex = 0;
+// let text = ["Collaborative ", "Enthusiastic ", "Imaginative ", "Resourceful "];
+// let currentIndex = 0;
 
-function changeText() {
-  gsap.to(".changingText span", {
-    duration: 2,
-    text: text[currentIndex],
-    ease: "none",
-  });
-  currentIndex = currentIndex + 1;
-  if (currentIndex > text.length - 1) {
-    currentIndex = 0;
-  }
-}
+// function changeText() {
+//   gsap.to(".changingText span", {
+//     duration: 2,
+//     text: text[currentIndex],
+//     ease: "none",
+//   });
+//   currentIndex = currentIndex + 1;
+//   if (currentIndex > text.length - 1) {
+//     currentIndex = 0;
+//   }
+// }
 
-setInterval(function () {
-  changeText();
-}, 3500);
+// setInterval(function () {
+//   changeText();
+// }, 3500);
+
+
+// gsap.to(".changingText", {duration: 3, text: "this is a to tween"})
+
 
 //gsaap changing header on scroll
 // Slide
