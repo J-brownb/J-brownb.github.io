@@ -541,3 +541,22 @@ button p {
   opacity: 0.5;
   font-size: 35px;
 }
+
+.grid {
+  width: 100%;
+}
+
+.grid-item {
+  width: 25%;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.grid-item--width2 {
+  width: 50%; /* Adjusted to make it clear that this item is wider */
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

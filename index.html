@@ -84,22 +84,38 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
       </div>
   <!-- INTRO -->
-  <section class="section text-center">
-    <div class="container">
-      <!-- <div class="row">
-        <div class="col-sm-6"> -->
-      <!-- <h2 class="changingText pt-5 mt-5"><span>Creative </span>Front End Developer</h2> -->
-      <p>I am a recent graduate of the Unviersity of Suffolk, achieving a X class degree in Computer Science (Web &
-        Mobile Development). Prior to my studies, I worked for 7 years in the digital marketing industry with a
-        particular interest in SEO and PPC.</p>
-      <p>
-        This website was created with HTML, CSS and JavaScript using Bootstrap 5 and is intended to showcase examples of
-        projects I have completed throughout university and in my own time.</p>
+  <section class="section mt-5">
+    <div class="container gx-5">
+      <div class="row gx-5">
+        <div class="col-sm-5">
+          <h2>About Me</h2>
+          <p>I am a recent graduate of the Unviersity of Suffolk, achieving a X class degree in Computer Science (Web &
+            Mobile Development). Prior to my studies, I worked for 7 years in the digital marketing industry with a
+            particular interest in SEO and PPC.</p>
+          <p>
+            This website was created with HTML, CSS and JavaScript using Bootstrap 5 and is intended to showcase examples of
+            projects I have completed throughout university and in my own time.</p>
+          </div>
+          <div class="col-sm-7 mt-5 text-center">
+            <div class="grid">
+              <div class="grid-item"> 
+                <img class="rounded mobImg" width="100%" src="/images/Wellness Logo.png">
+              </div>
+              <div class="grid-item"> 
+                <img class="rounded mobImg" width="100%" src="/images/Fictional.png">
+              </div>
+
+              <div class=" grid-item grid-item--width2"> 
+                <img class="rounded mobImg" width="100%" src="/images/Moywise Logo.png">
+              </div>
+            </div>
+            <a href="#projects"><button class="alternatebutton">View Projects</button></a>
+          </div>
+          
     </div>
-    </div>
-    </div>
+  </div>
   </section>
-  <section class="section text-center">
+  <section class="section text-center" id="projects">
     <div class="container">
   <h2 class="mt-5">What I've Been Working On</h2>
 </div>
@@ -241,8 +257,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <!-- JS FILE -->
-  <script src="home.js"></script>
+<!-- MASONARY -->
+<script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
+<!-- DRAGGABILLY -->
+<script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+    <!-- JS FILE -->
+    <script src="home.js"></script>
   <!-- SPLIDE SLIDER -->
   <script>
     new Splide('#project-carousel',

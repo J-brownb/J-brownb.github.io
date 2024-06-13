@@ -105,3 +105,17 @@ allSections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("hidden");
 });
+
+
+// Initialize Packery
+var elem = document.querySelector('.grid');
+var pckry = new Packery(elem, {
+  itemSelector: '.grid-item',
+  gutter: 10
+});
+
+// Make all grid-items draggable
+elem.querySelectorAll('.grid-item').forEach(function(itemElem) {
+  var draggie = new Draggabilly(itemElem);
+  pckry.bindDraggabillyEvents(draggie);
+});
