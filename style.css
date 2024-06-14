@@ -548,15 +548,54 @@ button p {
 
 .grid-item {
   width: 25%;
-  box-sizing: border-box; /* Ensure padding and border are included in width */
+  box-sizing: border-box; 
 }
 
 .grid-item--width2 {
-  width: 50%; /* Adjusted to make it clear that this item is wider */
+  width: 40%; 
 }
 
 .grid-item img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.fixed-size {
+    width: 320px;
+    height: 125px;
+}
+
+.fixed-size2 {
+  width: 320px;
+  height: 175px;
+}
+
+.fixed-size3 {
+  width: 200px;
+  height: 175px;
+}
+
+.packery-drop-placeholder {
+  outline: 3px dashed #444;
+  outline-offset: -6px;
+  /* transition position changing */
+  -webkit-transition: -webkit-transform 0.2s;
+          transition: transform 0.2s;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.pulse-on-hover:hover {
+  animation: pulse 1s infinite;
 }
