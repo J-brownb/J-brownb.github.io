@@ -299,7 +299,7 @@ button p {
   position: fixed;
   background-color: #fff;
   opacity: 0.9;
-  z-index: 10;
+  z-index: 1021;
   width: 100%;
 }
 
@@ -552,7 +552,7 @@ button p {
 }
 
 .grid-item--width2 {
-  width: 40%; 
+  width: 50%; 
 }
 
 .grid-item img {
@@ -597,5 +597,45 @@ button p {
 }
 
 .pulse-on-hover:hover {
-  animation: pulse 1s infinite;
+  animation: pulse 1s;
+}
+
+.skills {
+  font-size: 30px;
+  margin-top: 15px
+}
+
+.skills-item {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+background-color: #fff;
+padding: 10px 2px 5px 2px
+}
+
+.skills-text {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.red {
+  color: #d92a3ce1
+}
+
+.blue {
+  color: #21759b
+}
+
+.yellow {
+ color: #f57e02
+}
+
+.dark-blue {
+  color:  #174EA6
+}
+
+.green {
+  color: #3d8c40
+}
+
+.purple {
+  color: #74546D
 }
