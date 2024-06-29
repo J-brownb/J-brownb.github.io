@@ -210,9 +210,10 @@ footer p {
   position: fixed;
   background-color: #fff;
   opacity: 0.9;
-  z-index: 10;
+  z-index: 1021;
   width: 100%;
 }
+
 
 /* social icons */
 .socials ul {

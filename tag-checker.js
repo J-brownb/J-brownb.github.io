@@ -167,18 +167,6 @@ const nav = document.querySelector(".navbar");
 let navHeight = nav.getBoundingClientRect().height;
 // navHeight = navHeight + 100
 
-//Menu fade effect function
-const hover = function (e) {
-  if (e.target.classList.contains("nav-link")) {
-    const link = e.target;
-    const siblings = link.closest(".navbar").querySelectorAll(".nav-link");
-    siblings.forEach((el) => {
-      if (el !== link) el.style.opacity = this;
-    });
-  }
-};
-nav.addEventListener("mouseover", hover.bind(0.3));
-nav.addEventListener("mouseout", hover.bind(1));
 
 //sticky header
 nav.classList.add("sticky");
