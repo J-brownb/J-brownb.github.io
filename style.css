@@ -639,3 +639,23 @@ padding: 10px 2px 5px 2px
 .purple {
   color: #74546D
 }
+
+.fa-github:hover {
+  color: #6e5494
+}
+
+
+.fa-linkedin-in:hover {
+color: #0e76a8
+}
+
+.nav-link {
+  display: inline-block;
+  font-weight: 600;
+  text-shadow: 0 0 0 transparent;
+  transition: text-shadow 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  text-shadow: 0 0 1px black; 
+}

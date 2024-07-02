@@ -338,3 +338,23 @@ button p {
 .small-banner a {
   color: #E6B101;
 }
+
+.fa-github:hover {
+  color: #6e5494
+}
+
+
+.fa-linkedin-in:hover {
+color: #0e76a8
+}
+
+.nav-link {
+  display: inline-block;
+  font-weight: 600;
+  text-shadow: 0 0 0 transparent;
+  transition: text-shadow 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  text-shadow: 0 0 1px black; 
+}

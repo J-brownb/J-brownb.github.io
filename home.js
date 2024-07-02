@@ -82,8 +82,6 @@ let navHeight = nav.getBoundingClientRect().height;
 // nav.addEventListener("mouseout", hover.bind(1));
 
 
-
-
 //sticky header
 nav.classList.add("sticky");
 
